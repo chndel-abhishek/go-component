@@ -43,3 +43,7 @@ jobs:
         docker build -t ${{ secrets.DOCKER_USERNAME }}/go_app:latest .
         docker push ${{ secrets.DOCKER_USERNAME }}/go_app:latest
 
+    # - name: Deploy to staging
+    #   run: |
+    #       IMAGE_TAG=${{ env.IMAGE_TAG }}
+    #       ssh user@staging-server 'docker pull ${{ secrets.DOCKER_USERNAME }}/go-app:${IMAGE_TAG} && docker service update --image ${{ secrets.DOCKER_USERNAME }}/go-app:${IMAGE_TAG} go-app-service'
