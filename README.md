@@ -11,8 +11,8 @@ This is the backend part of application. This contains:
 ## Coding Standards
 In the CICD, I have:
 ```bash
--> Implemented PHPCS (PHP_CodeSniffer) for the WordPress component.
--> Configure PHPCS to enforce WordPress coding standards.
+-> Implemented GolangCI-Lint for the Go component.
+-> Configure GolangCI-Lint to enforce Go coding standards.
 -> If the tests fails then pipeline will fail
 ```
 
